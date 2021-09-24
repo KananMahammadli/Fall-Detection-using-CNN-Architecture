@@ -4,9 +4,9 @@ According to the World Health Organization (WHO), each year 646 000 fatal fall o
 
 ## CNN Architecture
 
-We have 6 blocks for feature extraction followed by a header. Each block contains Conv2D Layer with ReLU activation and MaxPooling2D. We start with 16 units and increase by 2 after 2 block:<br />
-<center> 16 -> 16 -> 32 -> 32 -> 64 -> 64 </center>
-After feature extraction, we flatten the result, Dense layer with 32 units and use sigmoid activation for classification.
+We have 6 blocks for feature extraction followed by a header. Each block contains Conv2D Layer with ReLU activation and MaxPooling2D. We start with 16 units and increase by 2 after 2 block:
+<div align='center'>16 -> 16 -> 32 -> 32 -> 64 -> 64 <br />
+<div align='left'> After feature extraction, we flatten the result, add Dense layer with 32 units and use sigmoid activation for classification.
 
 ## CNN Architecture Visualization
 ![FallNet](fallnet_architecture.png)
